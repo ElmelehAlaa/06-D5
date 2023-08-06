@@ -1,0 +1,29 @@
+.nav-item a {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.films {
+  max-width: 98%;
+}
+
+footer {
+  color: white;
+}
+
+.socials svg {
+  width: 30px;
+  height: 30px;
+  margin-inline: 10px;
+}/*# sourceMappingURL=style.css.map */
