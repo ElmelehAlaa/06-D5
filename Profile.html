@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/dist/css/profile.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
     <title>Netflix-Profile</title>
   </head>
   <body class="bg-dark">
@@ -15,7 +17,7 @@
       /></a>
     </nav>
     <div class="container w-50">
-      <div class="row">
+      <div class="row main">
         <div class="col-12">
           <h1 class="text-white">Edit Profile</h1>
         </div>
@@ -42,18 +44,24 @@
         <div class="col-xl-3 col-md-12">
           <div></div>
         </div>
-        <div class="col-xl-9 text-white">
+        <div class="col-xl-9 text-white mature-settings">
           Mature Settings:
-          <div class="col-12"><p class="bg-secondary w-25">ALL MATURITY RATINGS</p></div>
+          <div class="col-12"><p class="w-50 maturity-ratings px-3">ALL MATURITY RATINGS</p></div>
           <div class="col-12"><p>Show titles of all matury ratings for this profile</p></div>
-          <div class="col-12 edit"><button class="btn btn-secondary">Edit</button></div>
+          <div class="col-12 edit"><button class="btn bottone-profile">EDIT</button></div>
           <div class="col-12"><h4>Autoplay control</h4></div>
-          <div class="col-12"><input type="checkbox" /> Autoplay next episode in a series on all devices</div>
-          <div class="col-12"><input type="checkbox" />Autoplay previews while browsing on all devices</div>
+          <div class="col-12">
+            <input class="check-box-custom" type="checkbox" /> Autoplay next episode in a series on all devices
+          </div>
+          <div class="col-12">
+            <input class="check-box-custom" type="checkbox" />Autoplay previews while browsing on all devices
+          </div>
         </div>
-        <div class="col-4"><button class="btn btn-secondary">Save</button></div>
-        <div class="col-4"><button class="btn btn-secondary">cancel</button></div>
-        <div class="col-4"><button class="btn btn-secondary">Delete Profile</button></div>
+      </div>
+      <div class="row">
+        <div class="col-4"><button class="btn bottone-profile">SAVE</button></div>
+        <div class="col-4"><button class="btn bottone-profile">CANCEL</button></div>
+        <div class="col-4"><button class="btn bottone-profile">DELETE PROFILE</button></div>
       </div>
     </div>
   </body>
