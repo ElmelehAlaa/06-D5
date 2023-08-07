@@ -1,22 +1,49 @@
-.nav-item{
-    a{color: white;
-    font-weight: 600;
-font-size: 16px;}
+nav {
+  .container-fluid {
+    .nav-item {
+      a {
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+  #navbarScroll {
+    .avatar img {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
-h1{color: white;}
-h2{color: white;
-padding-top: 30px;
-font-size: 20px;}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+  padding-top: 30px;
+  font-size: 20px;
+}
 
-.films{
-    max-width: 98%;
-    
-    
+.films {
+  max-width: 98%;
 }
-footer{
-    color: white;
+footer {
+  color: white;
 }
 
-.socials svg{ width: 30px;
-height: 30px;
-margin-inline: 10px;}
+.socials svg {
+  width: 30px;
+  height: 30px;
+  margin-inline: 10px;
+}
+
+.header {
+  margin-top: 80px;
+}
+
+footer {
+  opacity: 40%;
+  p {
+    font-size: 13px;
+  }
+}

@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/dist/css/style.min.css" />
     <title>Netflix</title>
   </head>
   <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img width="100px" src="/Netflix-assets/assets/netflix_logo.png" alt="netflix"
@@ -27,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">TV Shows</a>
@@ -50,14 +51,64 @@
               <a class="nav-link">My List</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 text-white" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <ul class="navbar-nav my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="dropdown d-inline-block px-4 avatar">
+            <a
+              class="btn btn-secondary dropdown-toggle bg-dark border-0"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="/Netflix-assets/assets/avatar.png" alt="avatar" />
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="d-flex justify-content-between p-3">
+    <div class="d-flex justify-content-between p-3 header">
       <div class="d-inline-block">
         <h1 class="d-inline-block">TV Shows</h1>
         <div class="dropdown d-inline-block px-4">
@@ -73,7 +124,7 @@
         </div>
       </div>
       <div class="d-inline-block align-self-center">
-        <button class="w-30px bg-dark text-white">
+        <button class="bg-dark text-white border-1 border-light">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -88,7 +139,7 @@
             />
           </svg>
         </button>
-        <button class="w-30px bg-dark text-white">
+        <button class="bg-dark text-white border-1 border-light">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -104,35 +155,35 @@
         </button>
       </div>
     </div>
-    <div class="container films gutter-3">
+    <div class="container films">
       <h2>Trending Now</h2>
-      <div class="row p-0">
-        <div class="col-lg-2 p-0 m-0">
+      <div class="row p-0 gx-2">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media0.webp" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media1.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media10.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media11.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media12.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media13.jpg" alt="" />
           </div>
@@ -141,33 +192,33 @@
     </div>
     <div class="container films">
       <h2>Watch it Again</h2>
-      <div class="row p-0">
-        <div class="col-lg-2 p-0 m-0">
+      <div class="row p-0 gx-2">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media0.webp" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media1.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media10.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media11.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media12.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media13.jpg" alt="" />
           </div>
@@ -176,33 +227,33 @@
     </div>
     <div class="container films">
       <h2>New Releases</h2>
-      <div class="row p-0">
-        <div class="col-lg-2 p-0 m-0">
+      <div class="row p-0 gx-2">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media0.webp" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media1.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media10.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media11.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media12.jpg" alt="" />
           </div>
         </div>
-        <div class="col-lg-2 p-0 m-0">
+        <div class="col-12 col-lg-2 col-md-4">
           <div class="card w-100">
             <img src="/Netflix-assets/assets/media/media13.jpg" alt="" />
           </div>
@@ -263,23 +314,28 @@
             </svg>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
           <div class="col-3">Audio and Subtitles</div>
           <div class="col-3">Audio Description</div>
           <div class="col-3">Help Center</div>
           <div class="col-3">Gift Cards</div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
           <div class="col-3">Media center</div>
           <div class="col-3">Investor Relations</div>
           <div class="col-3">jobs</div>
           <div class="col-3">Term of User</div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
           <div class="col-3">Privacy</div>
           <div class="col-3">Legal Notices</div>
           <div class="col-3">Cookie preferences</div>
           <div class="col-3">Corporate information</div>
+          <div class="col-3 mt-2">Contact Us</div>
+          <div class="col-12 mt-4">
+            <button class="text-white bg-dark border-1 border border-light border-radius-0">Service code</button>
+          </div>
+          <div class="col-12 mt-4"><p>© 1997-2019, Inc.{i-0d00fcda2fdf9c0de}</p></div>
         </div>
       </div>
     </footer>
